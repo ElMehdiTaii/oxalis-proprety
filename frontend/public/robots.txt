@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oxalis-proprete.fr/sitemap.xml
+
+# Disallow admin pages if added in future
+Disallow: /admin/

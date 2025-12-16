@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply font-sans antialiased bg-white dark:bg-dark-950 text-dark-900 dark:text-dark-50;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+  }
+
+  /* Apple-style typography hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+    color: #1d1d1f;
+  }
+
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #f5f5f7;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+    line-height: 1.1;
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl;
+    line-height: 1.15;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #515154;
+  }
+
+  .dark p {
+    color: #d1d5db;
+  }
+
+  /* Apple-style focus states */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-4 ring-offset-white dark:ring-offset-dark-950;
+    transition: all 0.2s ease;
+  }
+}
+
+@layer components {
+  /* Apple-inspired primary button */
+  .btn-primary {
+    @apply px-7 py-3.5 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-medium transition-all duration-200 shadow-sm hover:shadow-lg;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+    transform: translateY(0);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+    @apply shadow-sm;
+  }
+
+  /* Apple-inspired secondary button (accent green) */
+  .btn-secondary {
+    @apply px-7 py-3.5 bg-accent-500 hover:bg-accent-600 text-white rounded-full font-medium transition-all duration-200 shadow-sm hover:shadow-lg;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+    transform: translateY(0);
+  }
+
+  .btn-secondary:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0);
+    @apply shadow-sm;
+  }
+
+  /* Outline button */
+  .btn-outline {
+    @apply px-7 py-3.5 bg-transparent border-2 border-primary-500 text-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 rounded-full font-medium transition-all duration-200;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+  }
+
+  /* Apple-style cards */
+  .card {
+    @apply bg-white dark:bg-dark-800 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border border-dark-100 dark:border-dark-700;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  /* Glassmorphism effect */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    @apply border border-dark-200/20;
+  }
+
+  .dark .glass-effect {
+    background: rgba(10, 10, 10, 0.8);
+    @apply border-dark-700/20;
+  }
+
+  /* Apple-style section padding */
+  .section-padding {
+    @apply py-24 md:py-32 lg:py-40 px-6 md:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Apple-style gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #316798 0%, #99cb34 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Apple-style scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-50 dark:bg-dark-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-300 dark:bg-dark-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-500;
+}
+
+/* Subtle floating animation */
+.bubble {
+  @apply absolute rounded-full opacity-5;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05);
+  }
+}
+
+/* Apple-style selection */
+::selection {
+  @apply bg-primary-500 text-white;
+}
+
+/* Skip to main content for accessibility */
+.skip-to-main {
+  @apply absolute -top-full left-0 z-[100] bg-primary-600 text-white px-4 py-2 transition-all;
+}
+
+.skip-to-main:focus {
+  @apply top-0;
+}
