@@ -3,44 +3,34 @@ import { motion } from 'framer-motion';
 const Partners = () => {
   const partners = [
     {
-      name: 'Urbat',
-      logo: 'https://via.placeholder.com/200x80/316798/FFFFFF?text=URBAT',
-      alt: 'Urbat - Partenaire OXALIS PROPRETE'
+      name: 'MAE',
+      logo: '/logo-mae.png',
+      alt: 'MAE - Partenaire OXALIS PROPRETE'
     },
     {
-      name: 'ADAS',
-      logo: 'https://via.placeholder.com/200x80/316798/FFFFFF?text=ADAS',
-      alt: 'ADAS - Partenaire OXALIS PROPRETE'
+      name: 'ADAS Avocats',
+      logo: '/adas-avocats-logo-150.jpg',
+      alt: 'ADAS Avocats - Partenaire OXALIS PROPRETE'
     },
     {
-      name: 'Avocats',
-      logo: 'https://via.placeholder.com/200x80/316798/FFFFFF?text=AVOCATS',
-      alt: 'Cabinet d\'Avocats - Partenaire OXALIS PROPRETE'
+      name: 'Alliade Habitat',
+      logo: '/logo-alliade-habitat.svg',
+      alt: 'Alliade Habitat - Partenaire OXALIS PROPRETE'
     },
     {
       name: 'Régie Pozetto',
-      logo: 'https://via.placeholder.com/200x80/316798/FFFFFF?text=POZETTO',
+      logo: '/6bbe2fa9-60d4-4bf2-9032-9c50085924f1.png',
       alt: 'Régie Pozetto - Partenaire OXALIS PROPRETE'
     },
     {
       name: 'Cap Com',
-      logo: 'https://via.placeholder.com/200x80/316798/FFFFFF?text=CAP+COM',
+      logo: '/capcom-logo.svg',
       alt: 'Cap Com - Partenaire OXALIS PROPRETE'
     },
     {
       name: 'Etiknounou',
-      logo: 'https://oxalis-proprete.fr/wp-content/uploads/2023/09/etiknounou-768x401.png',
+      logo: '/etiknounou-768x401.png',
       alt: 'Etiknounou - Partenaire OXALIS PROPRETE'
-    },
-    {
-      name: 'Hörmann',
-      logo: 'https://oxalis-proprete.fr/wp-content/uploads/2023/09/hoermann-vector-logo-768x401.png',
-      alt: 'Hörmann - Partenaire OXALIS PROPRETE'
-    },
-    {
-      name: 'Consulat Général d\'Italie',
-      logo: 'https://via.placeholder.com/200x80/316798/FFFFFF?text=CONSULAT+ITALIE',
-      alt: 'Consulat Général d\'Italie Lyon - Partenaire OXALIS PROPRETE'
     }
   ];
 
@@ -62,7 +52,7 @@ const Partners = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20">
           {partners.map((partner, index) => (
             <motion.div
               key={index}
