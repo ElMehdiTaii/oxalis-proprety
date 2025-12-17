@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import FooterApple from './components/FooterApple';
+import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
@@ -31,6 +32,7 @@ function App() {
             </Routes>
           </main>
           <FooterApple />
+          <WhatsAppButton />
         </div>
       </Router>
     </HelmetProvider>
