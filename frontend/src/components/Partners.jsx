@@ -3,9 +3,14 @@ import { motion } from 'framer-motion';
 const Partners = () => {
   const partners = [
     {
-      name: 'MAE',
-      logo: '/logo-mae.png',
-      alt: 'MAE - Partenaire OXALIS PROPRETE'
+      name: 'Foncia',
+      logo: '/Logo_Foncia-768x401.png',
+      alt: 'Foncia - Partenaire OXALIS PROPRETE'
+    },
+    {
+      name: 'Régie POZETTO',
+      logo: '/pozetto-768x401.png',
+      alt: 'Régie POZETTO - Partenaire OXALIS PROPRETE'
     },
     {
       name: 'ADAS Avocats',
@@ -18,9 +23,9 @@ const Partners = () => {
       alt: 'Alliade Habitat - Partenaire OXALIS PROPRETE'
     },
     {
-      name: 'Régie Pozetto',
+      name: 'Urbat Immobilier',
       logo: '/6bbe2fa9-60d4-4bf2-9032-9c50085924f1.png',
-      alt: 'Régie Pozetto - Partenaire OXALIS PROPRETE'
+      alt: 'Urbat Immobilier - Partenaire OXALIS PROPRETE'
     },
     {
       name: 'Cap Com',
@@ -31,6 +36,16 @@ const Partners = () => {
       name: 'Etiknounou',
       logo: '/etiknounou-768x401.png',
       alt: 'Etiknounou - Partenaire OXALIS PROPRETE'
+    },
+    {
+      name: 'Nexity',
+      logo: '/nexity-768x401.png',
+      alt: 'Nexity - Partenaire OXALIS PROPRETE'
+    },
+    {
+      name: 'Hörmann France',
+      logo: '/hoermann-vector-logo-768x401.png',
+      alt: 'Hörmann France - Partenaire OXALIS PROPRETE'
     }
   ];
 
