@@ -40,7 +40,7 @@ const Header = () => {
           <motion.img
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
-            src="https://oxalis-proprete.fr/wp-content/uploads/2022/03/logo_clipdrop-background-removal.png"
+            src="/logo.png"
             alt="OXALIS PROPRETE"
             className="h-12 md:h-14 object-contain"
           />
