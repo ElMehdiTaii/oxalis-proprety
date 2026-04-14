@@ -104,10 +104,11 @@ const Hero = () => {
                 className="absolute inset-0 rounded-[3rem] shadow-2xl overflow-hidden"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=2070&auto=format&fit=crop"
+                  src="/toon-lambrechts-E1HSxmVG5lE-unsplash.jpg"
                   alt="Équipe de nettoyage professionnelle OXALIS PROPRETE"
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  fetchpriority="high"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-dark-900/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 text-white p-12">

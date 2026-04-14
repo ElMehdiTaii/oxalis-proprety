@@ -8,10 +8,11 @@ const HeroApple = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=2070&auto=format&fit=crop"
+          src="/toon-lambrechts-E1HSxmVG5lE-unsplash.jpg"
           alt="Professionnel du nettoyage au travail"
           className="w-full h-full object-cover"
-          loading="eager"
+          fetchpriority="high"
+          decoding="async"
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-white/85 to-white/70" />
