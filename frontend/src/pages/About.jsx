@@ -102,10 +102,11 @@ const About = () => {
             >
               <div className="aspect-square rounded-[3rem] shadow-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
+                  src="/juup-schram-npCIKVoA1SY-unsplash.jpg"
                   alt="Équipe OXALIS PROPRETE"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-dark-900/40 to-transparent flex items-end">
                   <div className="p-12 text-white">

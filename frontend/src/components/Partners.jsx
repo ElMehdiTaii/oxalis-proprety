@@ -97,9 +97,11 @@ const Partners = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070&auto=format&fit=crop"
+              src="/giorgio-trovato-5TXz228u4eo-unsplash.jpg"
               alt="Partenariat professionnel"
               className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary-600/95 to-primary-700/90" />
           </div>

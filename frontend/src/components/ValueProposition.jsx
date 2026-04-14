@@ -15,10 +15,11 @@ const ValueProposition = () => {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop"
+              src="/adolfo-felix-PG8NyM_Mcts-unsplash.jpg"
               alt="Service de nettoyage professionnel"
               className="w-full h-full object-cover"
               loading="lazy"
+              decoding="async"
             />
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary-500/95 via-cyan-500/90 to-blue-600/95" />

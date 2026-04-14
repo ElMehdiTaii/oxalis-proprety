@@ -194,9 +194,11 @@ const Home = () => {
               className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
+                src="/juup-schram-npCIKVoA1SY-unsplash.jpg"
                 alt="Équipe OXALIS PROPRETE"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </motion.div>
           </div>
