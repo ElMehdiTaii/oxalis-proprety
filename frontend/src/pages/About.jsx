@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiAward, FiUsers, FiHeart, FiTarget } from 'react-icons/fi';
+import SEO from '../components/SEO';
 
 const About = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -43,6 +44,12 @@ const About = () => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title="A propos - OXALIS PROPRETE | Entreprise de nettoyage à Lyon"
+        description="Découvrez OXALIS PROPRETE, entreprise de nettoyage professionnel à Lyon depuis plus de 10 ans. Notre équipe qualifiée intervient pour syndics, entreprises et collectivités."
+        keywords="a propos oxalis proprete, entreprise nettoyage Lyon, equipe nettoyage professionnel Lyon, histoire entreprise proprete"
+        url="/about"
+      />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-primary-600 to-blue-700 text-white relative overflow-hidden">
         <div className="bubble w-96 h-96 bg-white -top-32 -right-32" style={{ animationDelay: '0s' }} />

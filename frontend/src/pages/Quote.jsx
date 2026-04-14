@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import axios from 'axios';
 import { FiCheckCircle } from 'react-icons/fi';
+import SEO from '../components/SEO';
 
 const Quote = () => {
   const [formData, setFormData] = useState({
@@ -81,6 +82,12 @@ const Quote = () => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title="Devis Gratuit - OXALIS PROPRETE | Nettoyage professionnel Lyon"
+        description="Demandez votre devis gratuit pour un service de nettoyage professionnel à Lyon. Réponse sous 24h. Nettoyage bureaux, copropriétés, vitrerie, nettoyage industriel."
+        keywords="devis nettoyage Lyon, devis gratuit nettoyage professionnel, demande devis entreprise nettoyage Lyon, tarif nettoyage Lyon"
+        url="/quote"
+      />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-primary-600 to-blue-700 text-white relative overflow-hidden">
         <div className="bubble w-96 h-96 bg-white -top-32 -right-32" style={{ animationDelay: '0s' }} />

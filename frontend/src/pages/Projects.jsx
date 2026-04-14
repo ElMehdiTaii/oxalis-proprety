@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const Projects = () => {
   const projects = [
@@ -55,6 +56,12 @@ const Projects = () => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title="Nos Réalisations - OXALIS PROPRETE | Projets de nettoyage à Lyon"
+        description="Découvrez les réalisations d'OXALIS PROPRETE : nettoyage de bureaux, copropriétés, espaces industriels et commerciaux à Lyon. Références clients et projets concrets."
+        keywords="realisations nettoyage Lyon, projets nettoyage professionnel, references clients oxalis, nettoyage bureaux Lyon, nettoyage copropriete Lyon"
+        url="/projects"
+      />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-primary-600 to-blue-700 text-white relative overflow-hidden">
         <div className="bubble w-96 h-96 bg-white -top-32 -right-32" style={{ animationDelay: '0s' }} />
