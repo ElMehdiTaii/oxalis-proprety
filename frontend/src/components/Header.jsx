@@ -40,7 +40,7 @@ const Header = () => {
           <motion.img
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
-            src="/logo.png"
+            src="/logo.svg"
             alt="OXALIS PROPRETE"
             className="h-12 md:h-14 object-contain"
           />
